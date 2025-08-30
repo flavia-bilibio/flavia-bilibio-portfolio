@@ -1,9 +1,11 @@
+/* Reset básico para todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo básico do body */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.5;
@@ -12,12 +14,14 @@ body {
     padding: 0;
 }
 
+/* Header */
 header {
     background-color: #161b22;
     border-bottom: 1px solid #30363d;
     padding: 1.2rem 0;
 }
 
+/* Menu de navegação */
 nav ul {
     display: flex;
     justify-content: center;
@@ -37,11 +41,13 @@ nav ul li a {
     transition: all 0.2s ease;
 }
 
+/* Efeito hover para os link do menu*/
 nav ul li a:hover {
     color: #388bfd;
     background-color: rgba(56, 139, 253, 0.1);
 }
 
+/* Container principal */
 main {
     max-width: 900px;
     margin: 2rem auto;
@@ -51,6 +57,7 @@ main {
     border: 1px solid #30363d;
 }
 
+/* Títulos */
 h1 {
     color: #e6edf3;
     margin-bottom: 1.8rem;
@@ -59,12 +66,14 @@ h1 {
     font-weight: 600;
 }
 
+/* Parágrafos */
 p {
     margin-bottom: 1.2rem;
     line-height: 1.7;
     color: #c9d1d9;
 }
 
+/* Formulário */
 form {
     margin-top: 2rem;
 }
@@ -80,6 +89,7 @@ label {
     color: #e6edf3;
 }
 
+/* Campos de entrada do forms */
 input,
 textarea {
     width: 100%;
@@ -93,6 +103,7 @@ textarea {
     transition: border-color 0.2s ease;
 }
 
+/* Destaque ao focar */
 input:focus,
 textarea:focus {
     outline: none;
@@ -100,6 +111,7 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(56, 139, 253, 0.2);
 }
 
+/* Bloco de contatos alternativos */
 .contatos-alternativos {
     margin: 2rem 0;
     background-color: #1a2029;
@@ -116,6 +128,7 @@ textarea:focus {
     margin-bottom: 0;
 }
 
+/* Links de contato */
 .link-contato {
     display: flex;
     align-items: center;
@@ -126,11 +139,14 @@ textarea:focus {
     transition: all 0.2s ease;
 }
 
+/* Hover nos links de contato */
 .link-contato:hover {
     background-color: rgba(56, 139, 253, 0.1);
     color: #388bfd;
+    transform: translateX(5px);
 }
 
+/* Ícones dos contatos */
 .icone-contato {
     width: 24px;
     height: 24px;
@@ -141,11 +157,13 @@ textarea:focus {
     font-weight: 500;
 }
 
+/* Estilo para email */
 .link-contato[href^="mailto:"] span {
     font-family: monospace;
     font-size: 0.95rem
 }
 
+/* Layout dos contatos */
 .container-contato {
     display: flex;
     gap: 3rem;
@@ -153,6 +171,7 @@ textarea:focus {
     flex-wrap: wrap;
 }
 
+/* Contatos e formulário lado a lado */
 .contatos-alternativos,
 .formulario-contato {
     flex: 1;
@@ -163,6 +182,7 @@ textarea:focus {
     border: 1px solid #30363d;
 }
 
+/* Títulos de contatos */
 .contatos-alternativos h2,
 .formulario-contato h2 {
     color: #e6edf3;
@@ -173,22 +193,7 @@ textarea:focus {
     padding-bottom: 0.5rem;
 }
 
-.link-contato:hover {
-    transform: translateX(5px);
-}
-
-@media (max-width: 768px) {
-    .container-contato {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .contatos-alternativos,
-    .formulario-contato {
-        min-width: 100%;
-    }
-}
-
+/* Botão de envio do formulário */
 button {
     display: inline-block;
     background: #388bfd;
@@ -209,21 +214,25 @@ button {
     min-width: 200px;
 }
 
+/* Hover do botão do formulário */
 button:hover {
     background: #2c75e0;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(56, 139, 253, 0.4);
 }
 
+/* Clique no botão do formulário */
 button:active {
     transform: translateY(-1px);
 }
 
+/* Efeito de carregando no botão */
 button.loading {
     pointer-events: none;
     opacity: 0.8;
 }
 
+/* Spinner animado no botão */
 button.loading::after {
     content: '';
     position: absolute;
@@ -238,6 +247,7 @@ button.loading::after {
     animation: spin 1s linear infinite;
 }
 
+/* Animação do spinner */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -248,6 +258,7 @@ button.loading::after {
     }
 }
 
+/* Container de interesses */
 .interesses {
     display: flex;
     flex-direction: column;
@@ -255,6 +266,7 @@ button.loading::after {
     margin-top: 20px;
 }
 
+/* Item individual de interesse */
 .interesse {
     background: rgba(56, 139, 253, 0.1);
     padding: 8px 12px;
@@ -266,38 +278,19 @@ button.loading::after {
     transition: all 0.2s ease;
 }
 
+/* Hover nos interesses */
 .interesse:hover {
     background: rgba(56, 139, 253, 0.2);
     transform: translateY(-2px);
     border-color: rgba(56, 139, 253, 0.5);
 }
 
+/* Estilo para os ícones dos interesses */
 .icone {
     font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
-    .secao {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .timeline {
-        padding-left: 20px;
-    }
-
-    .evento::before {
-        left: -28px;
-    }
-}
-
+/* Layout de apresentação pessoal */
 .apresentacao {
     display: flex;
     gap: 30px;
@@ -305,6 +298,7 @@ button.loading::after {
     margin-top: 20px;
 }
 
+/* Foto de perfil */
 .foto-perfil {
     width: 250px;
     height: 250px;
@@ -314,8 +308,11 @@ button.loading::after {
     box-shadow: 0 5px 20px rgba(56, 139, 253, 0.3);
     flex-shrink: 0;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Hover da foto de perfil */
 .foto-perfil:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 25px rgba(56, 139, 253, 0.4);
@@ -325,11 +322,7 @@ button.loading::after {
     flex: 1;
 }
 
-.foto-perfil {
-    position: relative;
-    overflow: hidden;
-}
-
+/* Efeito de brilho na foto */
 .foto-perfil::after {
     content: '';
     position: absolute;
@@ -343,10 +336,12 @@ button.loading::after {
     transform: rotate(30deg);
 }
 
+/* Efeito de brilho ao passar o mouse */
 .foto-perfil:hover::after {
     opacity: 1;
 }
 
+/* Responsividade para tablets e mobile */
 @media (max-width: 900px) {
     .apresentacao {
         flex-direction: column;
@@ -365,26 +360,21 @@ button.loading::after {
     }
 }
 
-@media (max-width: 480px) {
-    .foto-perfil {
-        width: 180px;
-        height: 180px;
-        border-width: 3px;
-    }
-}
-
+/* Container de Formação */
 .formacao {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
+/* Container de Idiomas */
 .idiomas {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
+/* Card para cada idioma */
 .idioma {
     background: rgba(56, 139, 253, 0.1);
     padding: 10px 15px;
@@ -394,24 +384,28 @@ button.loading::after {
     min-width: 200px;
 }
 
+/* Título do idioma */
 .idioma h3 {
     color: #388bfd;
     margin-bottom: 8px;
     font-size: 1.1rem;
 }
 
+/* Detalhes do idioma */
 .idioma p {
     color: #c9d1d9;
     margin: 0;
     font-size: 1rem;
 }
 
+/* Container de Portfolio */
 .portfolio {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
+/* Grid de projetos em destaque */
 .projetos-destaque {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -419,6 +413,7 @@ button.loading::after {
     margin-top: 20px;
 }
 
+/* Card de cada projeto */
 .projeto-card {
     background: rgba(56, 139, 253, 0.1);
     padding: 30px;
@@ -427,22 +422,26 @@ button.loading::after {
     transition: all 0.3s ease;
 }
 
+/* Hover nos cards de projeto */
 .projeto-card:hover {
     transform: translateY(-5px);
     border-color: rgba(56, 139, 253, 0.4);
     box-shadow: 0 8px 25px rgba(56, 139, 253, 0.15);
 }
 
+/* Título do projeto */
 .projeto-card h3 {
     color: white;
     margin-bottom: 20px;
     font-size: 1.4rem;
 }
 
+/* Detalhes dos projetos */
 .projeto-detalhes {
     margin: 20px 0;
 }
 
+/* Item individual de detalhe de projeto */
 .detalhe {
     color: #c9d1d9;
     margin-bottom: 10px;
@@ -450,10 +449,12 @@ button.loading::after {
     line-height: 1.5;
 }
 
+/* Destaque no texto de detalhes */
 .detalhe strong {
     color: #e6edf3;
 }
 
+/* Container de tecnologias */
 .tecnologias {
     display: flex;
     flex-wrap: wrap;
@@ -461,6 +462,7 @@ button.loading::after {
     margin: 25px 0;
 }
 
+/* Tag de tecnologia */
 .tech-tag {
     background: rgba(56, 139, 253, 0.2);
     color: #388bfd;
@@ -470,10 +472,12 @@ button.loading::after {
     font-weight: 600;
 }
 
+/* Container de links dos projetos */
 .projeto-links {
     margin-top: 25px;
 }
 
+/* Link do projeto */
 .projeto-link {
     display: inline-block;
     background: #388bfd;
@@ -486,12 +490,14 @@ button.loading::after {
     margin-right: 15px;
 }
 
+/* Hover no link do projeto */
 .projeto-link:hover {
     background: #2c75e0;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(56, 139, 253, 0.3);
 }
 
+/* Grid de habilidades */
 .habilidades {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -499,6 +505,7 @@ button.loading::after {
     margin-top: 20px;
 }
 
+/* Categoria de habilidades */
 .habilidade-categoria {
     background: rgba(56, 139, 253, 0.05);
     padding: 25px;
@@ -506,18 +513,21 @@ button.loading::after {
     border: 1px solid rgba(56, 139, 253, 0.1);
 }
 
+/* Título da habilidade */
 .habilidade-categoria h3 {
     color: white;
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
 
+/* Container de itens de habilidade */
 .habilidade-items {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
+/* Tag individual de habilidade */
 .habilidade-tag {
     background: rgba(56, 139, 253, 0.15);
     color: #388bfd;
@@ -527,6 +537,7 @@ button.loading::after {
     font-weight: 600;
 }
 
+/* Grid de próximos passos */
 .proximos-passos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -534,6 +545,7 @@ button.loading::after {
     margin-top: 20px;
 }
 
+/* Card de próximo passo */
 .passo {
     background: rgba(56, 139, 253, 0.08);
     padding: 20px;
@@ -542,18 +554,21 @@ button.loading::after {
     text-align: center;
 }
 
+/* Título do próximo passo */
 .passo h4 {
     color: #388bfd;
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
 
+/* Descrição do próximo passo */
 .passo p {
     color: #c9d1d9;
     margin: 0;
     font-size: 0.95rem;
 }
 
+/* Responsividade para tablets */
 @media (max-width: 768px) {
     .projetos-destaque {
         grid-template-columns: 1fr;
@@ -574,6 +589,7 @@ button.loading::after {
     }
 }
 
+/* Responsividade para mobile */
 @media (max-width: 768px) {
 
     body {
@@ -718,6 +734,7 @@ button.loading::after {
     }
 }
 
+/* Responsividade para telas muito pequenas */
 @media (max-width: 480px) {
 
     h1 {
@@ -774,6 +791,7 @@ button.loading::after {
     }
 }
 
+/* Ajuste para iOS - evitar zoom em inputs */
 @supports (-webkit-touch-callout: none) {
 
     input,
@@ -783,11 +801,13 @@ button.loading::after {
     }
 }
 
+/* Garante responsividade em imagens */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Legibilidade em mobile */
 @media (max-width: 768px) {
 
     p,
@@ -805,6 +825,7 @@ img {
     }
 }
 
+/* Menu mobile melhorado */
 @media (max-width: 768px) {
     nav ul {
         padding: 0;
