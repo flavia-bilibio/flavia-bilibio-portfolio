@@ -99,3 +99,49 @@ textarea:focus {
     border-color: #388bfd;
     box-shadow: 0 0 0 2px rgba(56, 139, 253, 0.2);
 }
+
+.contatos-alternativos {
+    margin: 2rem 0;
+    background-color: #1a2029;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+.contato-item {
+    margin-bottom: 1rem;
+}
+
+.contato-item:last-child {
+    margin-bottom: 0;
+}
+
+.link-contato {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #e6edf3;
+    padding: 0.8rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.link-contato:hover {
+    background-color: rgba(56, 139, 253, 0.1);
+    color: #388bfd;
+}
+
+.icone-contato {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.link-contato span {
+    font-weight: 500;
+}
+
+.link-contato[href^="mailto:"] span {
+    font-family: monospace;
+    font-size: 0.95rem;
+}

@@ -21,15 +21,63 @@
     </header>
 
     <main>
-        <h1>Meus contatos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam placeat iusto illum at et praesentium
-            ratione soluta alias quam non eum libero repellendus ipsam reiciendis, necessitatibus ab impedit. Neque quo,
-            laboriosam corrupti sed obcaecati assumenda quidem. Totam nobis eveniet tenetur minus recusandae
-            voluptatibus ipsam sed expedita tempore nam quo quis enim, dolor, iusto modi laboriosam. Quia, quam
-            consequuntur temporibus adipisci quod debitis, doloremque accusamus dolorum voluptatibus maxime sapiente
-            repellat officiis animi cupiditate ea veniam sequi reprehenderit enim consequatur autem dicta libero?
-            Accusantium, neque sed. Excepturi necessitatibus fugiat corporis autem perspiciatis culpa quibusdam alias,
-            est tenetur eaque impedit magni ducimus!</p>
+        <h1>Contato</h1>
+        <p>Entre em contato comigo através dos canais abaixo ou pelo formulário:</p>
+        <div class="container-contato">
+            <div class="contatos-alternativos">
+                <h2>Contatos Diretos</h2>
+
+                <div class="contato-item">
+                    <a href="https://wa.me/5535992546473" target="_blank" class="link-contato">
+                        <img src="assets/whatsapp-icon.png" alt="WhatsApp" class="icone-contato">
+                        <span>Enviar mensagem no WhatsApp</span>
+                    </a>
+                </div>
+
+                <div class="contato-item">
+                    <a href="tel:+5535992546473" class="link-contato">
+                        <img src="assets/phone-icon.png" alt="Telefone" class="icone-contato">
+                        <span>Ligar para (35) 99254-6473</span>
+                    </a>
+                </div>
+
+                <div class="contato-item">
+                    <a href="https://www.linkedin.com/in/flavia-bilibio/" target="_blank" class="link-contato">
+                        <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icone-contato">
+                        <span>Meu perfil no LinkedIn</span>
+                    </a>
+                </div>
+
+                <div class="contato-item">
+                    <a href="mailto:flaviabilibio@gmail.com" class="link-contato">
+                        <img src="assets/email-icon.png" alt="E-mail" class="icone-contato">
+                        <span>flaviabilibio@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="formulario-contato">
+                <h2>Envie uma Mensagem</h2>
+                <form id="form-contato">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 
