@@ -79,6 +79,24 @@
             </div>
         </div>
     </main>
+
+    <script>
+        document.getElementById('form-contato').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const button = this.querySelector('button');
+            button.classList.add('loading');
+            button.textContent = 'Enviando...';
+
+            setTimeout(() => {
+                alert('Mensagem enviada com sucesso!');
+                this.reset();
+                button.classList.remove('loading');
+                button.textContent = 'Enviar Mensagem';
+            }, 2000);
+        });
+    </script>
+
 </body>
 
 </html>
