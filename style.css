@@ -237,13 +237,28 @@ button.loading::after {
     }
 }
 
+.interesses {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
 .interesse {
     background: rgba(56, 139, 253, 0.1);
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     gap: 8px;
+    border: 1px solid rgba(56, 139, 253, 0.3);
+    transition: all 0.2s ease;
+}
+
+.interesse:hover {
+    background: rgba(56, 139, 253, 0.2);
+    transform: translateY(-2px);
+    border-color: rgba(56, 139, 253, 0.5);
 }
 
 .icone {
@@ -361,14 +376,21 @@ button.loading::after {
 
 .idioma {
     background: rgba(56, 139, 253, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #30363d;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(56, 139, 253, 0.3);
     flex: 1;
     min-width: 200px;
 }
 
 .idioma h3 {
     color: #388bfd;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.idioma p {
+    color: #c9d1d9;
+    margin: 0;
+    font-size: 1rem;
 }
