@@ -1,47 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Flavia Bilibio Paiva Monteiro</title>
+    <title>Portfólio - Flavia Bilibio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Sobre mim</a></li>
-                <li><a href="formacao.html">Formação</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Sobre mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <h1>Portfólio</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod earum doloremque corrupti minus sint eaque,
-            accusantium reprehenderit ullam dolorem id beatae debitis ipsam quo aspernatur, amet omnis. Nesciunt enim id
-            amet nostrum labore porro consequuntur, quibusdam cum! Qui cumque fuga odit voluptates eos omnis ipsum
-            obcaecati laudantium porro nam et a ea veritatis, molestias nesciunt nisi iusto amet in atque at corporis,
-            necessitatibus dignissimos aut perferendis. Necessitatibus nobis ea illum! Eos corrupti libero alias cumque
-            autem, quod optio aspernatur asperiores qui nam quia eum. Reiciendis labore unde accusantium laboriosam
-            quis. Iusto officiis suscipit quibusdam ratione enim aliquid nihil architecto ea cum illo. Earum soluta
-            reiciendis, aliquam quod ullam veritatis nemo sequi natus eaque pariatur possimus explicabo obcaecati
-            necessitatibus doloremque fugiat ad nisi odio! Veritatis debitis culpa odit itaque dolores. Molestiae,
-            officia blanditiis praesentium doloribus sint repudiandae sit vitae est ipsa alias voluptatum ea quae
-            aspernatur maiores beatae illum? At, asperiores voluptates eum dicta vel enim iusto aut deserunt tenetur
-            doloribus? Dolore, quis corrupti atque quasi sapiente commodi nisi, dolorem magnam eum dolor minus molestiae
-            numquam? Fugiat libero quam quis sequi omnis alias ipsam sapiente reiciendis doloribus aliquam, enim
-            molestias numquam maxime ducimus adipisci beatae neque facere praesentium, est consequatur optio dolorem
-            accusantium tempora dolorum. Laboriosam neque nisi eius. Esse vero minima illo nobis obcaecati accusantium
-            eum eos? Dolor eligendi officiis consequatur, facere sit non, quidem odit deleniti earum assumenda tenetur
-            aspernatur. Ad, facilis sunt esse beatae expedita aut ipsum modi non! Voluptates sint veniam, odio debitis
-            fugiat quibusdam fuga laborum?</p>
-    </main>
+        <main class="portfolio">
+            <section class="secao">
+                <h1>Meu Portfólio</h1>
+                <p>Confira abaixo alguns dos projetos que desenvolvi durante minha jornada na tecnologia:</p>
+            </section>
 
+            <section class="secao">
+                <h2>Projetos Backend em Destaque</h2>
+
+                <div class="projetos-destaque">
+                    <!-- Sistema Bancário API -->
+                    <div class="projeto-card">
+                        <h3>🏦 Sistema Bancário API</h3>
+                        <p>API RESTful completa para simulação de operações bancárias, incluindo transferências, saques,
+                            depósitos e consulta de saldo.</p>
+                        <div class="projeto-detalhes">
+                            <div class="detalhe">
+                                <strong>Funcionalidades:</strong> CRUD de usuários, transações, extrato bancário
+                            </div>
+                            <div class="detalhe">
+                                <strong>Autenticação:</strong> JWT Tokens
+                            </div>
+                            <div class="detalhe">
+                                <strong>Validações:</strong> Dados de entrada e regras de negócio
+                            </div>
+                        </div>
+                        <div class="tecnologias">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/flavia-bilibio/sistema-bancario-API" target="_blank"
+                                class="projeto-link">
+                                📁 Ver repositório
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sistema PDV -->
+                    <div class="projeto-card">
+                        <h3>🛒 Sistema PDV (Ponto de Venda)</h3>
+                        <p>Sistema completo para gerenciamento de vendas, controle de estoque e emissão de relatórios
+                            para pequenos comércios.</p>
+                        <div class="projeto-detalhes">
+                            <div class="detalhe">
+                                <strong>Módulos:</strong> Vendas, Estoque, Clientes, Relatórios
+                            </div>
+                            <div class="detalhe">
+                                <strong>Relatórios:</strong> Vendas por período, produtos mais vendidos
+                            </div>
+                            <div class="detalhe">
+                                <strong>Controle:</strong> Gestão de inventário em tempo real
+                            </div>
+                        </div>
+                        <div class="tecnologias">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">API REST</span>
+                            <span class="tech-tag">Gestão</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/flavia-bilibio/sistema-pdv" target="_blank"
+                                class="projeto-link">
+                                📁 Ver repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao">
+                <h2>Tecnologias e Habilidades Demonstradas</h2>
+
+                <div class="habilidades">
+                    <div class="habilidade-categoria">
+                        <h3>🔧 Backend</h3>
+                        <div class="habilidade-items">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="habilidade-tag">Node.js</span>
+                            <span class="habilidade-tag">Express.js</span>
+                            <span class="habilidade-tag">API REST</span>
+                            <span class="habilidade-tag">JWT Authentication</span>
+                        </div>
+                    </div>
+
+                    <div class="habilidade-categoria">
+                        <h3>🗄️ Banco de Dados</h3>
+                        <div class="habilidade-items">
+                            <span class="habilidade-tag">SQLite</span>
+                            <span class="habilidade-tag">MySQL</span>
+                            <span class="habilidade-tag">SQL</span>
+                            <span class="habilidade-tag">PostgreSQL</span>
+                            <span class="habilidade-tag">Esquemas Relacionais</span>
+                        </div>
+                    </div>
+
+                    <div class="habilidade-categoria">
+                        <h3>⚡ Funcionalidades</h3>
+                        <div class="habilidade-items">
+                            <span class="habilidade-tag">CRUD Completo</span>
+                            <span class="habilidade-tag">Validações</span>
+                            <span class="habilidade-tag">Criptografia</span>
+                            <span class="habilidade-tag">Regras de Negócio</span>
+                            <span class="habilidade-tag">Gestão de Estado</span>
+                        </div>
+                    </div>
+
+                    <div class="habilidade-categoria">
+                        <h3>🛠️ Ferramentas</h3>
+                        <div class="habilidade-items">
+                            <span class="habilidade-tag">Git</span>
+                            <span class="habilidade-tag">GitHub</span>
+                            <span class="habilidade-tag">VS Code</span>
+                            <span class="habilidade-tag">Postman</span>
+                            <span class="habilidade-tag">HTTP</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao">
+                <h2>Próximos Passos</h2>
+                <p>Estou continuamente desenvolvendo novos projetos e aprimorando minhas habilidades. Em breve:</p>
+
+                <div class="proximos-passos">
+                    <div class="passo">
+                        <h4>🚀 Deploy em Cloud</h4>
+                        <p>Hospedagem dos projetos em plataformas cloud como Heroku ou Railway</p>
+                    </div>
+
+                    <div class="passo">
+                        <h4>📱 Frontend Integration</h4>
+                        <p>Desenvolvimento de interfaces para consumir as APIs</p>
+                    </div>
+
+                    <div class="passo">
+                        <h4>🧪 Testes Automatizados</h4>
+                        <p>Implementação de testes unitários e de integração</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
